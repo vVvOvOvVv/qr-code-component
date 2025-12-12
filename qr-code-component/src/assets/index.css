@@ -11,13 +11,14 @@
 :root {
   --color-background: var(--slate-300);
 
-  --color-heading: var(--slate-500);
-  --color-text: var(--slate-900);
+  --color-heading: var(--slate-900);
+  --color-text: var(--slate-500);
 }
 
 #app {
   font-family: 'Outfit', Avenir, sans-serif;
   font-size: 15px;
+  margin: 20px;
 }
 
 body {

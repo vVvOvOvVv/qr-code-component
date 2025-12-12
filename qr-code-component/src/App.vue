@@ -1,38 +1,38 @@
 <template>
-  hello
+  <BoxComponent>
+    <img src="./assets/image-qr-code.png" alt="QR Code" />
+    <h1>
+      Improve your front-end skills by building projects
+    </h1>
+    <div class="qr-text">
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
+  </BoxComponent>
 </template>
 
 <script>
+import BoxComponent from './components/BoxComponent.vue';
+
 export default {
   name: 'App',
+  components: {
+    BoxComponent,
+  }
 }
 </script>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
+<style>
+  body {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    justify-content: center;
+    align-items: center;
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  h1 {
+    color: var(--color-heading);
   }
-}
 </style>
